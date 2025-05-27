@@ -1,0 +1,69 @@
+:root {
+    --col-width: 1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+  }
+body {
+    background-color: rgb(243, 243, 243);
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    flex: var(--col-width);
+    
+    /* height: 496px; */
+    justify-content: var(--justify-col, center);
+    align-items: var(--align-col, center);
+    /* height: var(--row-height, auto); */
+    /* max-width: 200px; */
+  }
+
+
+
+  
+.row {
+    display: flex;
+    width: 100%;
+    text-align: var(--text-align-row, start);
+    flex-wrap: wrap;
+    justify-content: var(--justify-row, center);
+    height: var(--row-height, auto);
+    padding: .5rem;
+    flex-direction: row;
+}
+.fixed-row {
+    /* height: 400px; */
+    display: flex;
+    /* height: 4rem; */
+    /* flex: 1; */
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: var(--justify-fixed-row, center);
+    height: var(--row-height, auto);
+    height: 100%;
+    padding: .5rem;
+    flex-direction: row;
+}
+picture {
+    display: block;
+    /* margin: 0; */
+    /* padding: 0; */
+    line-height: 0;
+}
+.row-reverse { 
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    height: var(--row-height, auto);
+    padding: .5rem;
+    flex-direction: row-reverse;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}
