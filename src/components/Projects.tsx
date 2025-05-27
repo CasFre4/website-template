@@ -30,7 +30,7 @@ const Projects: React.FC = () => {
                     <div className={styles.project}>
                         <div className='col'>
                             <div className='row'>
-                                <div className='row'>
+                                <div className='row' style={{'--text-align-row': 'center'}}>
                                         <h1>{project.title}</h1>
                                 </div>
                                 <div className='row'>

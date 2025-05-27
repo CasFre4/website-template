@@ -1,4 +1,4 @@
-import sampleImage from '/sliding-gallery-1/image-webp/cover-images-0.webp'
+import sampleImage from '/logo/imwatching.jpg'
 // import {ReactNode} from 'react'
 
 type Project = {
