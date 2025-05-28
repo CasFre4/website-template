@@ -1,0 +1,8 @@
+[{
+    "title": "EIA automated data collection",
+    "summary": "EIA Bulk Data Collector is a Python library designed to interact with the U.S. Energy Information Administration (EIA) API to collect bulk energy-related data for analysis and research purposes. This library simplifies the process of fetching, organizing, and processing large datasets from the EIA API and even provides the option of storing to a database.",
+    "features":  "\n## Features\n- Collect bulk data from the EIA API\n- Automatically handle API requests and rate limits\n- Parse and store data in JSON(limited), DataFrames, Databases.\n- Support for all publicly available EIA API data. More information about the EIA API found here: [https://www.eia.gov](https://www.eia.gov/opendata/).\n- Easy-to-use interface for querying and downloading data\n- Extensive error catching for ease of use.",
+    "image": "/logo/imwatching.jpg",
+    "link": "https://github.com/CasFre4/EIA-bulk",
+    "skills": ["Python", "SQL", "API", "Pandas"]
+}]

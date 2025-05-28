@@ -6,9 +6,7 @@ import Projects from '../components/Projects'
 // import projectList from '../assets/ProjectList'
 
 function Home() {  
-    
-    
-    
+  
     return (
       <div className='projectContainer'>
         <Projects />
