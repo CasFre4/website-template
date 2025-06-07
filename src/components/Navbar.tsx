@@ -9,10 +9,10 @@ const Navbar: React.FC = () => {
     return (
         <>
             <nav className={styles.navbar}>
-                <div className={styles.navbarLeft}>
+                {/* <div className={styles.navbarLeft}>
                     <img src="/logo/imwatching.jpg" alt="Logo" id='navbar-logo'></img>
                     <h1>Me</h1>
-                </div>
+                </div> */}
                 {!isOpen && (
                     <div className={styles.hamburger} onClick={toggleMenu}>
                         ☰
@@ -25,15 +25,15 @@ const Navbar: React.FC = () => {
                                 <Link to='/' onClick={() => setIsOpen(false)}>Home</Link>
                             </li>
                             <li>
-                                <Link to='/Register' onClick={() => setIsOpen(false)}>Projects</Link>
+                                <Link to='/Projects' onClick={() => setIsOpen(false)}>Projects</Link>
                             </li>
                         </ul>
                     </div>
-                    <div className={styles.navbarRight}>
+                    {/* <div className={styles.navbarRight}>
                         <div className = {styles.profilePicture}>
                             <img src="/logo/imwatching.jpg"></img>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
         </>

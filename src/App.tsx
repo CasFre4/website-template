@@ -1,13 +1,13 @@
 
 import { Routes, Route, useLocation} from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/Login';
-import Schedule from './pages/Register';
+import Projects from './pages/Projects';
 import Navbar from './components/Navbar'
 import './css/global.css'
-import projectList from './assets/ProjectList'
+import projectList from './data/projects.json'
 
 function App() {
+
   const location = useLocation()
   const hideNavbarPath = ['/login', '/register']
   const shouldHideNavbar = hideNavbarPath.includes(location.pathname)
@@ -16,11 +16,18 @@ function App() {
       {!shouldHideNavbar && <Navbar />}
       <Routes>
         {projectList.map((project, index) => (
+          project.title &&
+          project.summary &&
+          project.features &&
+          project.image &&
+          project.link &&
+          project.skills.length > 0 &&
+          project.projectType && (
           <Route key={index} path={`/${project.title.toLowerCase().replace(/\s+/g, '-')}`} element={<p>Hello World</p>} />
-        ))}
+        )))}
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route  path='/aboutus' element={<Schedule />}></Route>
+        <Route path="/Projects" element={<Projects />} />
+        {/* <Route  path='/aboutus' element={<Schedule />}></Route> */}
       </Routes>
       
     </>

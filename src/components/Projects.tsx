@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from'../css/Projects.module.css'
-import projectList from '../assets/ProjectList'
+import ProjectList from '../assets/ProjectList'
 import '../css/global.css'
 import ReactMarkdown from 'react-markdown'
+
 
 
 // type ProjectsProps = {
@@ -22,7 +23,10 @@ import ReactMarkdown from 'react-markdown'
 // }
 // export default Projects
 
+
 const Projects: React.FC = () => {
+    // const [projectList, setProjectList] = useState(projectListRaw)
+    const projectList = ProjectList()
     return (
         <>
             {projectList.map((project, key: number) => (
