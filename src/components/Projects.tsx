@@ -26,7 +26,9 @@ import ReactMarkdown from 'react-markdown'
 
 const Projects: React.FC = () => {
     // const [projectList, setProjectList] = useState(projectListRaw)
+    
     const projectList = ProjectList()
+    console.log(`End project List ${projectList}`)
     return (
         <>
             {projectList.map((project, key: number) => (
