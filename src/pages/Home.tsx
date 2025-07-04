@@ -1,5 +1,5 @@
 // import { useState } from 'react'
-import '../css/Home.css'
+import '../css/Home.module.css'
 // import ImageSlidingGallery from '../components/ImageSlidingGallery'
 // import DescGallery from '../components/DescGallery'
 // import Projects from '../components/Projects'
@@ -10,8 +10,14 @@ function Home() {
   
     return (
       // <div className='projectContainer'>
-        <ChartHome/>
-      // </div>
+      <div className='row'>
+        <div className='col'>
+          <ChartHome/>
+        </div>
+        <div className='col'>
+          <h1>Welcome to my website</h1>
+        </div>
+      </div>
     )
   }
   
