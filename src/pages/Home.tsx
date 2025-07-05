@@ -25,7 +25,7 @@ function Home() {
           </div>
           <div className='row' style={{'--col-width': '.33', '--justify-row': 'flex-start'} as React.CSSProperties}>
             <div className={styles.hypercontainer}>
-              <div className={styles.basichyper}><Link to='/Project'>Examples</Link></div>
+              <div className={styles.basichyper}><Link to='/Projects'>Examples</Link></div>
               <div className={styles.basichyper}><Link to='/ContactMe'>Reach out</Link></div>
             </div>
           </div>
