@@ -5,7 +5,7 @@ import Projects from './pages/Projects';
 import Navbar from './components/Navbar'
 import './css/global.css'
 import projectList from './data/projects.json'
-
+import ContactMe from './pages/ContactMe';
 function App() {
 
   const location = useLocation()
@@ -27,6 +27,7 @@ function App() {
         )))}
         <Route path="/" element={<Home />} />
         <Route path="/Projects" element={<Projects />} />
+        <Route path="/ContactMe" element={<ContactMe />} />
         {/* <Route  path='/aboutus' element={<Schedule />}></Route> */}
       </Routes>
       

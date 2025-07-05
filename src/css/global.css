@@ -44,7 +44,7 @@ body {
     flex-wrap: wrap;
     justify-content: var(--justify-fixed-row, center);
     height: var(--row-height, auto);
-    height: 100%;
+    /* height: 100%; */
     padding: .5rem;
     flex-direction: row;
 }
@@ -65,5 +65,7 @@ picture {
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
+        /* justify-content: var(--justify-row-short, center); */
+        /* align-items: center; */
     }
 }

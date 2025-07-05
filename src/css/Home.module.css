@@ -1,0 +1,41 @@
+.description p {
+    padding-top: 20px;
+}
+.description {
+    /* align-items: end; */
+    /* justify-content: start; */
+    max-width: 34rem;
+    /* outline: 2px red solid; */
+}
+.basichyper {
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 10px 25px;
+}
+.basichyper a {
+    font-weight: 1000;
+    color: white;
+    text-decoration: none;
+}
+.hypercontainer {
+    display: flex;
+    flex-direction: row;
+}
+@media (max-width: 768px) {
+    .basichyper {
+        margin-right: 0;
+    }
+    .description {
+    /* align-items: end; */
+    /* justify-self: center; */
+    /* width: 100%; */
+    /* --col-width: 1; */
+    align-self: center;
+    /* outline: 2px red solid; */
+    }
+    .hypercontainer {
+        justify-content: space-around;
+    }
+}
