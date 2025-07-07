@@ -1,13 +1,12 @@
 // import { useState } from 'react'
 import Projects from '../components/Projects'
 
-
 function ProjectsPage() {
 
   
     return (
       <>
-        <div className='projectContainer'>
+        <div style={{paddingTop: '1rem'} as React.CSSProperties}>
           <Projects />
       </div>
       </>

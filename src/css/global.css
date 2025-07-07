@@ -35,6 +35,7 @@ body {
     padding: .5rem;
     flex-direction: row;
 }
+
 .fixed-row {
     /* height: 400px; */
     display: flex;

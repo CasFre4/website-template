@@ -13,7 +13,7 @@ function ChartReact() {
         const chart = new ChartMe({})
         chart.loadJSON(chartdata)
         // console.log(`this.processed: ${chart.processed}, this.width: ${chart.width}, this.height: ${chart.height}`)
-        chart.graph({container: containerRef.current, height: 400 - 20 - 40, width: 288 - 20 - 40})//height and width define size of chart
+        chart.graph({container: containerRef.current, height: 350 - 20 - 40, width: 252 - 20 - 40})//height and width define size of chart
         
    
         }, []);
