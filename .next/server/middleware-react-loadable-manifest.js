@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"../node_modules/chartme/dist/esm/index.mjs -> ./chunks/saveJSON-CYGwuAlj.mjs":{"id":979,"files":["static/chunks/979.2b3d96475c01a20a.js"]}}';

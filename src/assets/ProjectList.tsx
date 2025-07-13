@@ -27,7 +27,7 @@ const formattedData = (dtype: (string | undefined ) = undefined, newFirst: boole
     if (sortData===undefined) {
         sortData = data
     }
-    console.log(sortData)
+    // console.log(sortData)
     return sortData
 }
 export default formattedData

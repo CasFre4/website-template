@@ -1,7 +1,7 @@
+"use client"
 import React from 'react'
 import styles from'../css/Projects.module.css'
 import ProjectList from '../assets/ProjectList'
-import '../css/global.css'
 import ReactMarkdown from 'react-markdown'
 
 
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
     // const [projectList, setProjectList] = useState(projectListRaw)
     
     const projectList = ProjectList()
-    console.log(`End project List ${projectList}`)
+    // console.log(`End project List ${projectList}`)
     return (
         <>
             {projectList.map((project, key: number) => (

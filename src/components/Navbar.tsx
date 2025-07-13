@@ -1,6 +1,7 @@
+"use client"
 import React, {useState} from 'react'
-import { Link } from 'react-router-dom';
 import styles from'../css/Navbar.module.css'
+import Link from 'next/link'
 
 const Navbar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -11,7 +12,7 @@ const Navbar: React.FC = () => {
             <nav className={styles.navbar}>
                 <div className={styles.navbarLeft}>
                     <div className={styles.navLink}>
-                         <Link to='/' onClick={() => setIsOpen(false)}>Omar</Link>
+                         <Link href='/' onClick={() => setIsOpen(false)}>Omar</Link>
                     </div>
                 </div>
                 {!isOpen && (
@@ -23,16 +24,16 @@ const Navbar: React.FC = () => {
                     <div className={styles.navbarCenter}>
                         <ul className={styles.navLinks}>
                             <li>
-                                <Link to='/' onClick={() => setIsOpen(false)}>Home</Link>
+                                <Link href='/' onClick={() => setIsOpen(false)}>Home</Link>
                             </li>
                             <li>
-                                <Link to='/Projects' onClick={() => setIsOpen(false)}>Projects</Link>
+                                <Link href='/projects' onClick={() => setIsOpen(false)}>Projects</Link>
                             </li>
                         </ul>
                     </div>
                     <div className={styles.navbarRight}>
                         <div className={styles.navLink}>
-                            <Link to='/ContactMe' onClick={() => setIsOpen(false)}> Contact Me </Link>
+                            <Link href='/contact-me' onClick={() => setIsOpen(false)}> Contact Me </Link>
                         </div>
                     </div>
                 </div>

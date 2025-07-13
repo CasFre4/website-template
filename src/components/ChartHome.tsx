@@ -1,4 +1,7 @@
-import ChartMe from '../../../ChartMe/src/ChartMe'
+"use client"
+// import ChartMe from '../../../ChartMe'
+import ChartMe from 'chartme'
+// import ChartMe from 'chartme'
 import {useEffect, useRef} from 'react'
 import chartdata from'../data/chartdata.json'
 
@@ -17,6 +20,6 @@ function ChartReact() {
         
    
         }, []);
-    return <div ref={containerRef} />
+    return <div ref={containerRef}/>
 }
 export default ChartReact

@@ -1,7 +1,8 @@
+"use client"
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import styles from '../css/Home.module.css'
-// import 'global.css'
+// import '../css/global.css'
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);

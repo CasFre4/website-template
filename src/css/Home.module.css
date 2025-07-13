@@ -7,6 +7,7 @@
     max-width: 34rem;
     /* outline: 2px red solid; */
 }
+
 .contactcontainer {
     justify-content: start;
     max-width: 34rem;
@@ -31,12 +32,13 @@
 .from_name_container {
     /* width: 1rem; */
     width: 100%;
+    /* outline: green solid 2px; */
     padding-bottom: 1rem;
     /* margin: 2rem; */
 }
-form {
+/* .row form {
     width: 100%;
-}
+} */
 .reply_to_container {
     padding-bottom: 1rem;
     /* justify-content: top; */
