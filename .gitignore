@@ -25,4 +25,4 @@ dist-ssr
 public/old_images
 nongit/
 .env
-out/
+dist/
