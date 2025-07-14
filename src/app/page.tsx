@@ -20,7 +20,7 @@ function Home() {
           <div className='row' style={{'--col-width': '.33', '--justify-row': 'flex-start'} as React.CSSProperties}>
             <div className={styles.description}>
               <h1>Welcome to Omar's</h1>
-              <p>I am a focused and dedicated interdesciplinary developer with a heavy focus on data-driven solutions. I continuously expore new ways of collecting, visualizing, and interpreting data trends. I strive to learn about and build systems which provide meaningful connections between information and users.</p>
+              <p>Welcome to my site, I am Omar Castro.</p><p>I am a focused and dedicated interdesciplinary developer with a heavy focus on data-driven solutions. I continuously expore new ways of collecting, visualizing, and interpreting data trends. I strive to learn about and build systems which provide meaningful connections between information and users.</p>
             </div>
           </div>
           <div className='row' style={{'--col-width': '.33', '--justify-row': 'flex-start'} as React.CSSProperties}>
