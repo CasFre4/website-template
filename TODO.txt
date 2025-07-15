@@ -1,4 +1,0 @@
-gotta fix consecutive 1 and 11 and also 0 and 10 line 54,55
-fix colors not appearing likely related to this.processed which is using 0 1 2 3 instead of 0 10 1 11
-could count numbe of -1 to decide where border is if chart is missing too much
-problem in preprocessing get keys from 

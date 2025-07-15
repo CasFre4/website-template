@@ -28,6 +28,16 @@ const Projects: React.FC = () => {
     // const [projectList, setProjectList] = useState(projectListRaw)
     
     const projectList = ProjectList()
+    // const [projectList, setProjectList] = useState([]);
+    // 
+    // useEffect(() => {
+    //     async function fetchData() {
+    //     const data = await ProjectList(); // assumes ProjectList returns a Promise
+    //     setProjectList(data);
+    //     }
+
+    //     fetchData();
+    // }, []);
     // console.log(`End project List ${projectList}`)
     return (
         <>
