@@ -19,6 +19,7 @@ const ContactForm: React.FC = () => {
     } else {
       endpoint = 'http://localhost:8787'
     }
+    console.log(endpoint)
     try {
       const response = await fetch( endpoint, {
         method: 'POST',
