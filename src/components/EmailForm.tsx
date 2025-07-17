@@ -32,6 +32,7 @@ const ContactForm: React.FC = () => {
           message
         })
       })
+      console.log(response.json())
       const result = await response.json()
       if (result.success) {
       // Handle success
