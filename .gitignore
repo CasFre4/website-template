@@ -26,3 +26,4 @@ public/old_images
 nongit/
 .env
 dist/
+.dev.vars

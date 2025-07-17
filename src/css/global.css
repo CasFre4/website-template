@@ -69,7 +69,12 @@ picture {
 @media (max-width: 768px) {
     .row {
         flex-direction: column;
+        /* justify-content: center; */
         /* justify-content: var(--justify-row-short, center); */
-        /* align-items: center; */
+        align-items: center;
+        width: 100%; 
+    }
+    .col {
+        width: 100%;
     }
 }

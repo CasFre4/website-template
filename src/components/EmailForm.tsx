@@ -1,34 +1,48 @@
 "use client"
 import React, { useRef } from 'react';
-import emailjs from '@emailjs/browser';
 import styles from '../css/Home.module.css'
 // import '../css/global.css'
 
 const ContactForm: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
-  const sendEmail = (e: React.FormEvent) => {
+  const sendEmail = async (e: React.FormEvent) => {
     e.preventDefault();
-
     if (!formRef.current) return;
-
-    emailjs
-      .sendForm(
-        'service_kd8s929',     // from EmailJS dashboard
-        'template_ea8puh8',    // from EmailJS dashboard
-        formRef.current,
-        'TtYq39B0mQKtECQNs'      // from EmailJS dashboard
-      )
-      .then(() => {
-        alert('Message sent successfully!');
-        formRef.current?.reset();
+    const formData = new FormData(formRef.current);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    let endpoint: string
+    if (process.env.NODE_ENV === 'production') {
+      endpoint = '/api/send-email'
+    } else {
+      endpoint = 'http://localhost:8787'
+    }
+    try {
+      const response = await fetch( endpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message
+        })
       })
-      .catch((error) => {
-        console.error('Email send failed:', error);
-        alert('Failed to send message.');
-      });
-  };
-
+      const result = await response.json()
+      if (result.success) {
+      // Handle success
+      console.log('Email sent successfully!');
+      } else {
+        // Handle error
+        console.error('Failed to send email');
+      }
+    } catch (error) {
+    console.error('Error:', error);
+    }
+  }
   return (
     <div className='fixed-row' style={{'outline': '3px red solid', 'justifyContent': 'left'} as React.CSSProperties}>
         <div className='col' style={{'--justify-col': 'start', '--col-width': '.2'} as React.CSSProperties}>
