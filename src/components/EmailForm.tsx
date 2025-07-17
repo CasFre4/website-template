@@ -32,8 +32,8 @@ const ContactForm: React.FC = () => {
           message
         })
       })
-      console.log(response.json())
       const result = await response.json()
+      console.log(result)
       if (result.success) {
       // Handle success
       console.log('Email sent successfully!');
