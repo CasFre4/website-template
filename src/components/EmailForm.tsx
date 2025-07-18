@@ -19,7 +19,6 @@ const ContactForm: React.FC = () => {
     } else {
       endpoint = 'http://localhost:8787'
     }
-    console.log(endpoint)
     try {
       const response = await fetch( endpoint, {
         method: 'POST',
@@ -33,7 +32,6 @@ const ContactForm: React.FC = () => {
         })
       })
       const result = await response.json()
-      console.log(result)
       if (result.success) {
       // Handle success
       console.log('Email sent successfully!');
