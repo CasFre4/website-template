@@ -12,7 +12,7 @@
   "summary": "Projects Website Template is a simple React template for organizing and displaying personal projects. ",
   "features": "## Features\n- Displays personal projects in a concise way.\n- Easy to modify, requiring only the modification of the json file in the data folder.",
   "image": "/images/projectjson0.png",
-  "link": "https://github.com/CasFre4/CasFre4.github.io",
+  "link": "https://github.com/CasFre4/website-template",
   "skills": ["JavaScript", "React"],
   "projectType": "cs"
 },
