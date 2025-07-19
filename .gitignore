@@ -27,3 +27,4 @@ nongit/
 .env
 dist/
 .dev.vars
+wrangler.jsonc
