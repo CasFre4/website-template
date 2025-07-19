@@ -23,9 +23,9 @@ function Home() {
               <p>Welcome to my site, I am Omar Castro.</p><p>I am a focused and dedicated interdisciplinary developer with a heavy focus on data-driven solutions. I continuously expore new ways of collecting, visualizing, and interpreting data trends. I strive to learn about and build systems which provide meaningful connections between information and users.</p>
             </div>
           </div>
-          <div className='row' style={{'--col-width': '.33', '--justify-row': 'flex-start'} as React.CSSProperties}>
+          <div className='row' style={{'--col-width': '1', '--justify-row': 'flex-start'} as React.CSSProperties}>
             <div className={styles.hypercontainer}>
-              <div className={styles.basichyper}><Link href='/projects'>Examples</Link></div>
+              <div className={styles.basichyper} style={{marginRight: '20px'}}><Link href='/projects'>Examples</Link></div>
               <div className={styles.basichyper}><Link href='/contact-me'>Reach out</Link></div>
             </div>
           </div>
