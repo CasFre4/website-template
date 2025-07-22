@@ -24,5 +24,14 @@
   "link": "https://github.com/CasFre4/ChartMe",
   "skills": ["JavaScript", "d3"],
   "projectType": "cs"
+},
+{
+  "title": "send-email-worker",
+  "summary": "The send-email-worker is a simple api that powers a contact form so that anyone can contact me through the form on my website. This script is designed for cloudflare workers.",
+  "features": "## Features\n- Backend for website contact form.",
+  "image": "/images/send-email-worker.png",
+  "link": "https://github.com/CasFre4/send-email-worker.git",
+  "skills": ["JavaScript", "cloudflare"],
+  "projectType": "cs"
 }
 ]
