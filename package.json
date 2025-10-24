@@ -12,7 +12,7 @@
     "deploy": "git add . && git commit -m \"deploying\""
   },
   "dependencies": {
-    "chartme": "^0.0.8",
+    "chartme": "^0.0.13",
     "next": "^15.3.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",

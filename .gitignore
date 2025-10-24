@@ -28,3 +28,4 @@ nongit/
 dist/
 .dev.vars
 wrangler.jsonc
+.gitignore

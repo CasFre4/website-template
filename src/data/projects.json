@@ -33,5 +33,14 @@
   "link": "https://github.com/CasFre4/send-email-worker.git",
   "skills": ["JavaScript", "cloudflare"],
   "projectType": "cs"
+},
+{
+  "title": "pyproton",
+  "summary": "Lightweight protonvpn python library.",
+  "features": "## Features\n- connect to server \n- disconenct\n- reconnect\n- logout/login",
+  "image": "/images/vpn.webp",
+  "link": "https://github.com/CasFre4/pyproton.git",
+  "skills": ["Python"],
+  "projectType": "cs"
 }
 ]
