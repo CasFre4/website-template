@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "deploy": "git add . && git commit -m \"deploying\""
+    "deploy": "git add . && git commit -m \"deploying\" && git push -u origin"
   },
   "dependencies": {
     "chartme": "^0.0.13",
@@ -23,7 +23,6 @@
     "@types/node": "^25.0.9",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.0.4",
-    "@types/react-router-dom": "^5.3.3",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "gh-pages": "^6.3.0",

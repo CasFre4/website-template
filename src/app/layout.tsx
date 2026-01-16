@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar"
 // import LayoutWrapper from "../components/LayoutWrapper";
-import "../css/global.css"
+import "../css/global.css";
 // import {metadata} from './metadata'
 
 // export {metadata}
