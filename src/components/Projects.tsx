@@ -42,8 +42,9 @@ const Projects: React.FC = () => {
     return (
         <>
             {projectList.map((project, key: number) => (
-                <a href={project.link} key={key} className={styles.defaultLink} target="_blank" rel="noopener noreferrer">
-                    <div className={styles.project}>
+                <div className={styles.project} key={key}>
+                    <a href={project.link} className={styles.defaultLink} target="_blank" rel="noopener noreferrer">
+                    
                         <div className='col'>
                             <div className='row'>
                                 <div className='row' style={{'--text-align-row': 'center'} as React.CSSProperties}>
@@ -67,8 +68,9 @@ const Projects: React.FC = () => {
                                 </div>
                             </div>
                         </div>
+                        </a>
                     </div>
-                </a>
+                
             ))}
         </>
     )

@@ -1,5 +1,6 @@
 .project {
     /* padding: 0 0px; */
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -33,6 +34,7 @@
 .defaultLink {
     all: unset;
     cursor: pointer;
+    width: 100%;
 }
 .skills {
     display: flex;
@@ -68,5 +70,8 @@
     }
     .summary {
         padding-bottom: 10px;
+    }
+    .project {
+        width: auto;
     }
 }

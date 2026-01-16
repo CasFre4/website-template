@@ -6,7 +6,7 @@ function ProjectsPage() {
   
     return (
       <>
-        <div style={{paddingTop: '1rem'} as React.CSSProperties}>
+        <div style={{paddingTop: '1rem', display: "flex", alignItems: "center", flexDirection: "column", width: "100%"} as React.CSSProperties}>
           <Projects />
       </div>
       </>
