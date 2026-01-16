@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "npx --yes http-server dist -p 3000",
     "lint": "eslint .",
     "deploy": "git add . && git commit -m \"deploying\" && git push -u origin"
   },
